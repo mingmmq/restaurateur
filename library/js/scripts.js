@@ -18,7 +18,10 @@ jQuery(document).ready(function($){
 	checkWindowSize();
 	
 	/* prepend menu icon */
-	$('div.menu').prepend('<div id="menu-icon">Menu</div>');
+	/* text version - but only supports english, not useful if your website is supporting multiple langauges */
+	/* $('div.menu').prepend('<div id="menu-icon">Navigation</div>'); */
+        /* fontawesome version */
+        $('div.menu').prepend('<div id="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>');
 	$('#menu-filter-wrap').prepend('<div id="menu-item-icon">Select Menu Item</div>');
 	
 	/* toggle nav */

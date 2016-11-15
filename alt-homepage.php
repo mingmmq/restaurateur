@@ -20,7 +20,7 @@ get_header(); ?>
 					} else {
 						echo 'data-cycle-fx="scrollHorz"';
 					}
-				  ?> data-cycle-slides="> div.slides" <?php
+				  ?> data-cycle-slides="div.slides" <?php
                   	if ( get_theme_mod('restaurateur_slider_timeout') ) {
 						$slider_timeout = wp_kses_post( get_theme_mod('restaurateur_slider_timeout') );
 						echo 'data-cycle-timeout="' . $slider_timeout . '000"';

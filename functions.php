@@ -8,6 +8,8 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  */
 
+// Add HTML5 fallback for Contact Form 7
+add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 
 if ( ! function_exists( 'restaurateur_setup' ) ):
 /**
